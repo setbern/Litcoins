@@ -18,7 +18,7 @@ import SendAmount from './SendAmount';
 import TransactionDetails from './TransactionDetails';
 
 
-export default class SendBTCDetail extends Base {
+export default class test extends Base {
    
     constructor(props) {
         super(props);
@@ -30,8 +30,7 @@ export default class SendBTCDetail extends Base {
         return (
        
         <ScrollView contentContainerStyle={styles.contentContainerStyle}>
-           <SendAmount />
-           <TransactionDetails />
+           <Text>TEstomg</Text>
 
         </ScrollView>   
          
@@ -43,9 +42,7 @@ const styles = StyleSheet.create({
     
 
    contentContainerStyle:{
-    backgroundColor: colors.white,
-    marginTop: 65,
-    flex:1
+    
    }
 
 });

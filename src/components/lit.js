@@ -5,8 +5,7 @@ import React, {
     View,
     Image,
     TouchableHighlight,
-    Switch,
-    ScrollView
+    
 } from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -17,7 +16,7 @@ import {mixins, colors} from '../styles';
 
 
 
-export default class SendAmount extends Base {
+export default class NavBar extends Base {
    
     constructor(props) {
         super(props);
@@ -30,9 +29,7 @@ export default class SendAmount extends Base {
        
         <View style={styles.root}>
         	
-        	<View style={styles.container} >
-        		<Text style={styles.amount}><Icon name='usd' size={28}/> 126.36</Text>
-        	</View>
+        	<Text>what whta</Text>
         </View> 
          
         )
@@ -42,27 +39,10 @@ export default class SendAmount extends Base {
 const styles = StyleSheet.create({
     
     root:{
-    	backgroundColor: colors.blue,
-    	alignSelf: 'stretch',
-    	height: 115,
-    	alignItems: 'center',
-    	justifyContent:'center'
-    },
-    container:{
+        backgroundColor: colors.blue,
         
-    	width: 160,
-    	height: 60,
-    	alignItems: 'center',
-    	justifyContent:'center',
-    	borderColor: colors.lightGray,
-    	borderBottomWidth: 2
-
     },
-    amount:{
-    	fontSize: 35,
-    	color: colors.white	
-    }
-
+   
    
 });
 

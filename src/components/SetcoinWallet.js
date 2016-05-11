@@ -14,11 +14,11 @@ import Base from './Base';
 import {mixins, colors} from '../styles';
 
 
-import SendAmount from './SendAmount';
-import TransactionDetails from './TransactionDetails';
+import BtcDisplay from './BtcDisplay';
+import Transactions from './Transactions'
 
 
-export default class SendBTCDetail extends Base {
+export default class SetcoinWallet extends Base {
    
     constructor(props) {
         super(props);
@@ -26,13 +26,12 @@ export default class SendBTCDetail extends Base {
     }
     
     render() {
-        console.log('testing')
+        
         return (
        
         <ScrollView contentContainerStyle={styles.contentContainerStyle}>
-           <SendAmount />
-           <TransactionDetails />
-
+          	<BtcDisplay />
+          	<Transactions/>
         </ScrollView>   
          
         )
@@ -43,9 +42,7 @@ const styles = StyleSheet.create({
     
 
    contentContainerStyle:{
-    backgroundColor: colors.white,
-    marginTop: 65,
-    flex:1
+    
    }
 
 });
